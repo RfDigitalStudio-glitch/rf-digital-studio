@@ -639,58 +639,45 @@ header{
 }
 
 .work-card{
-  min-height:320px;
   overflow:hidden;
   border-radius:20px;
   border:1px solid var(--border);
   background:#101626;
+  transition:.3s;
 }
 
-.work-art{
-  min-height:320px;
-  padding:25px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-
-  background:
-  radial-gradient(circle at 20% 20%,rgba(6,182,212,.32),transparent 35%),
-  radial-gradient(circle at 80% 75%,rgba(124,58,237,.48),transparent 42%),
-  #111625;
+.work-card:hover{
+  transform:translateY(-7px);
+  border-color:rgba(103,232,249,.35);
+  box-shadow:0 20px 45px rgba(0,0,0,.25);
 }
 
-.work-card:nth-child(2) .work-art{
-  background:
-  radial-gradient(circle at 75% 20%,rgba(236,72,153,.35),transparent 35%),
-  radial-gradient(circle at 20% 80%,rgba(124,58,237,.48),transparent 42%),
-  #111625;
+.work-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  display:block;
 }
 
-.work-card:nth-child(3) .work-art{
-  background:
-  radial-gradient(circle at 50% 35%,rgba(34,197,94,.25),transparent 35%),
-  radial-gradient(circle at 85% 85%,rgba(6,182,212,.35),transparent 40%),
-  #111625;
+.work-info{
+  padding:20px;
 }
 
-.work-label{
-  display:inline-block;
-  width:max-content;
-  padding:7px 12px;
-  border-radius:20px;
-  background:rgba(0,0,0,.35);
+.work-info span{
+  color:#67e8f9;
   font-size:11px;
+  font-weight:bold;
   letter-spacing:1px;
 }
 
-.work-art h3{
-  font-size:28px;
-  margin-bottom:5px;
+.work-info h3{
+  font-size:21px;
+  margin:7px 0;
 }
 
-.work-art p{
-  color:#d2d9e6;
-  font-size:14px;
+.work-info p{
+  color:var(--muted);
+  font-size:13px;
 }
 
 /* WHY */
@@ -1578,7 +1565,7 @@ Grow your digital presence.
 
 </section>
 
-<!-- ================= OUR WORK ================= -->
+<!-- OUR WORK -->
 
 <section id="work">
 
@@ -1586,14 +1573,13 @@ Grow your digital presence.
 
 <div class="section-title">
 
-<span>Portfolio & Creative Work</span>
+<span>Portfolio</span>
 
 <h2>Our Work</h2>
 
 <p>
-Explore our creative service categories. Real project images,
-video thumbnails and portfolio samples will be added here as the studio
-portfolio grows.
+Explore some of our creative digital work across video editing,
+graphic design, social media, digital marketing and branding.
 </p>
 
 </div>
@@ -1601,69 +1587,57 @@ portfolio grows.
 <div class="work-grid">
 
 <div class="work-card">
-
-<div class="work-art">
-
-<span class="work-label">
-VIDEO EDITING
-</span>
-
-<div>
-
-<h3>Reels & Shorts</h3>
-
-<p>
-Short-form video editing for social media and digital platforms.
-</p>
-
+<img src="video-editing.jpg" alt="Professional Video Editing Services by RF Digital Studio">
+<div class="work-info">
+<span>VIDEO EDITING</span>
+<h3>Professional Video Editing</h3>
+<p>Reels, Shorts, YouTube videos and promotional content.</p>
 </div>
-
-</div>
-
 </div>
 
 <div class="work-card">
-
-<div class="work-art">
-
-<span class="work-label">
-GRAPHIC DESIGN
-</span>
-
-<div>
-
-<h3>Creative Designs</h3>
-
-<p>
-Modern thumbnails, posters and social media design concepts.
-</p>
-
+<img src="graphic-design.jpg" alt="Professional Graphic Design Services by RF Digital Studio">
+<div class="work-info">
+<span>GRAPHIC DESIGN</span>
+<h3>Creative Graphic Design</h3>
+<p>Modern designs for businesses, brands and social media.</p>
 </div>
-
-</div>
-
 </div>
 
 <div class="work-card">
-
-<div class="work-art">
-
-<span class="work-label">
-BRANDING
-</span>
-
-<div>
-
-<h3>Brand Identity</h3>
-
-<p>
-Professional branding and creative identity concepts.
-</p>
-
+<img src="thumbnail-poster.jpg" alt="YouTube Thumbnail and Poster Design by RF Digital Studio">
+<div class="work-info">
+<span>THUMBNAIL & POSTER</span>
+<h3>Thumbnail & Poster Design</h3>
+<p>Attractive thumbnails, posters and promotional creatives.</p>
+</div>
 </div>
 
+<div class="work-card">
+<img src="social-media.jpg" alt="Social Media Creative Services by RF Digital Studio">
+<div class="work-info">
+<span>SOCIAL MEDIA</span>
+<h3>Social Media Creatives</h3>
+<p>Creative content designed for a strong social presence.</p>
+</div>
 </div>
 
+<div class="work-card">
+<img src="digital-marketing.jpg" alt="Digital Marketing Services by RF Digital Studio">
+<div class="work-info">
+<span>DIGITAL MARKETING</span>
+<h3>Digital Marketing</h3>
+<p>Creative digital solutions to improve online visibility.</p>
+</div>
+</div>
+
+<div class="work-card">
+<img src="branding.jpg" alt="Branding and Creative Design Services by RF Digital Studio">
+<div class="work-info">
+<span>BRANDING</span>
+<h3>Branding & Creative Design</h3>
+<p>Professional visual identity and creative brand solutions.</p>
+</div>
 </div>
 
 </div>
